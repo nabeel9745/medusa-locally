@@ -1,0 +1,53 @@
+Integrate and Run Medusa Locally
+
+
+Before you can install and use Medusa, you need the following tools installed on your machine
+
+Node.js v16+
+Git
+PostgreSQL
+
+You could install this by :
+
+https://nodejs.org/en/download/package-manager  (for node)
+https://git-scm.com/download/win  (for git)
+https://www.postgresql.org/download/windows/ (for PostgreSQL)
+
+Make sure it is installed
+ 
+node -v
+git --version
+psql --version
+
+
+step 1: Run create-medusa-app
+  .Open the Terminal 
+  .Execute command: npx create-medusa-app@latest
+
+step 2: you’ll first be asked to enter the name of your project, which is used to create the directory holding your Medusa backend. You can use the default my-medusa-store or enter another project name.
+
+step 3: Step 3: Enter an admin email
+
+Step 4: Install Next.js Starter Storefront
+
+Step 5: Specify PostgreSQL credentials
+
+Postgres username 
+Postgres password 
+
+Step 6: Log into admin dashboard
+Once the project is prepared, the Medusa backend will start and the admin dashboard will be opened in your default browser. You'll then be asked to enter a password for the admin email you entered earlier, as well as other account information.
+
+>It will start automatically
+We could access through:
+http://localhost:7001/admin
+
+
+.You could see the storefront and backend folder created on the local directory
+
+. change directory to store-front using terminal
+  -yarn dev
+. change directory to backend folder using terminal
+  -yarn start
+
+you could access medusa through http://localhost:8000
